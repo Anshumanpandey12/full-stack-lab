@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie and City Lists</title>
+    <style>
+        /* Styling for the unordered movie list */
+        ul {
+            list-style-type: square;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px;
+            font-size: 16px;
+        }
+        ul li.favorite {
+            color: white;
+            background-color: #f39c12;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Styling for the ordered city list */
+        ol {
+            padding: 0;
+            counter-reset: list-counter;
+        }
+        ol li {
+            padding: 8px;
+            margin: 4px 0;
+            font-size: 16px;
+        }
+        ol li:nth-child(odd) {
+            background-color: #dfe6e9;
+        }
+        ol li:nth-child(even) {
+            background-color: #b2bec3;
+            color: white;
+        }
+        ol li.special {
+            font-style: italic;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie and City Lists</h1>
+    
+    <h2>Favorite Movies (Unordered List)</h2>
+    <ul>
+        <li>The Shawshank Redemption</li>
+        <li class="favorite">Inception</li>
+        <li>Parasite</li>
+        <li>Interstellar</li>
+        <li>The Dark Knight</li>
+    </ul>
+
+    <h2>Visited Cities (Ordered List)</h2>
+    <ol>
+        <li>New York</li>
+        <li class="special">Tokyo</li>
+        <li>London</li>
+        <li class="special">Paris</li>
+        <li>Berlin</li>
+    </ol>
+</body>
+</html>
